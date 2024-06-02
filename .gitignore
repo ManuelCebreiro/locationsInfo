@@ -1,0 +1,6 @@
+node_modules
+test.js
+*.log
+*.md
+data
+scripts
