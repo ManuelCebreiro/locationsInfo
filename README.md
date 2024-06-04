@@ -1,11 +1,52 @@
 # locationsInfo
 
-Este módulo propociona una lista de ciudades de España y permite varias operaciones.
-    - Obtener todas las ciudades de España
-    - Obtener una ciudad deseada, median búsqueda por zipCode, o nombre de una ciudad.
-    - Obtener una lista de ciudades que están en un rango X de una ciudad deseada.
+Este módulo proporciona una lista de ciudades de España y permite varias operaciones.
 
-## Installation
+## Funcionalidades
 
-```
-npm install locationsInfo
+- **Obtener todas las ciudades de España:** Puedes obtener una lista completa de todas las ciudades disponibles en España.
+- **Obtener una ciudad por zipCode:** Proporciona la capacidad de buscar una ciudad por su código postal.
+- **Obtener una ciudad por nombre:** Permite buscar una ciudad por su nombre.
+- **Obtener ciudades dentro de un rango:** Te permite encontrar todas las ciudades dentro de un rango específico de una ciudad determinada.
+
+## Instalación
+
+Puedes instalar este módulo utilizando npm:
+
+**npm install locationsInfo**
+
+
+## Uso
+
+```javascript
+// Importar el módulo
+const locationsInfo = require('locationsInfo');
+
+// Ejemplo de uso para obtener todas las ciudades
+const allCities = locationsInfo.getAllCities();
+console.log(allCities);
+
+// Ejemplo de uso para obtener una ciudad por nombre
+const cityByName = locationsInfo.getCitiByName('Ferrol');
+console.log(cityByName);
+
+// Ejemplo de uso para obtener ciudades dentro de un rango
+const citiesInRange = locationsInfo.getCitiesInRange('Ferrol', 30); // 30 kilómetros de rango
+console.log(citiesInRange);
+
+
+
+Este README.md proporciona una descripción básica del módulo, cómo instalarlo y cómo usarlo. Puedes personalizarlo según tus necesidades específicas y los detalles de tu módulo.
+
+Espero que esto te ayude a empezar. Si necesitas más ayuda, ¡no dudes en preguntar!
+
+## Contribución
+
+Si encuentras algún error, tienes alguna sugerencia de mejora, o si falta tu ciudad en la lista, ¡me encantaría recibir tu contribución! Puedes [crear un issue](https://github.com/ManuelCebreiro/locationsInfo/issues) para reportar el problema o [enviar un pull request](https://github.com/ManuelCebreiro/locationsInfo/pulls) con tus cambios.
+
+Para añadir una nueva ciudad:
+1. Asegúrate de tener el código postal, nombre de la ciudad, provincia, comunidad autónoma y sus códigos correspondientes.
+2. Edita el archivo JSON de ciudades y agrega la información de la nueva ciudad.
+3. Envia tu pull request con la nueva información y me encargaré de revisarlo.
+
+¡Esperamos tu contribución!
