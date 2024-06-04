@@ -52,18 +52,18 @@ function getAllCities(): {
 
 function getCitiesInRange(
   referenceCity: string,
-  range: number,
-  allCities: City[]
+  range: number
+  // allCities: City[]
 ): City[] {
-  const cityObjectReference = allCities.find(
-    (item) => item.city === referenceCity
+  const cityObjectReference = cities.find(
+    (item: City) => item.city === referenceCity
   );
   if (!cityObjectReference) {
     console.error(`La ciudad de referencia ${referenceCity} no se encontró`);
     return [];
   }
-  return allCities.filter(
-    (city) => calculateDistance(cityObjectReference, city) <= range
+  return cities.filter(
+    (city: City) => calculateDistance(cityObjectReference, city) <= range
   );
 }
 
