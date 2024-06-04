@@ -3,5 +3,4 @@ dist
 test.js
 *.log
 *.md
-data
 scripts
