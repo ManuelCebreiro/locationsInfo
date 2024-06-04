@@ -67,7 +67,7 @@ function getCitiesInRange(
   );
 }
 
-module.exports = {
+export = {
   getCitiByName,
   getAllCities,
   getCitieByZipCode,
