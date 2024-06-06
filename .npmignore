@@ -1,3 +1,5 @@
 data/cities.json
 node_modules
 test.js
+.vscode/settings.json
+scripts

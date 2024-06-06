@@ -5,3 +5,4 @@ test.js
 *.md
 scripts
 data/cities.json
+.vscode/settings.json
