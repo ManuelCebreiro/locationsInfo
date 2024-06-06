@@ -1,4 +1,4 @@
-const cities = require("../data/cities.json");
+const cities = require("../data/datos_minimized.json");
 import { calculateDistance } from "./geolocalitationUtils";
 import { City } from "./types";
 

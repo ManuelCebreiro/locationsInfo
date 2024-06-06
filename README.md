@@ -20,19 +20,13 @@ Puedes instalar este módulo utilizando npm:
 
 ```javascript
 // Importar el módulo
-const locationsInfo = require('locationsInfo');
+import { getAllCities, getCitiesInRange } from 'locationsinfo';
 
 // Ejemplo de uso para obtener todas las ciudades
-const allCities = locationsInfo.getAllCities();
-console.log(allCities);
+const allcities = getAllCities();
 
 // Ejemplo de uso para obtener una ciudad por nombre
-const cityByName = locationsInfo.getCitiByName('Ferrol');
-console.log(cityByName);
-
-// Ejemplo de uso para obtener ciudades dentro de un rango
-const citiesInRange = locationsInfo.getCitiesInRange('Ferrol', 30); // 30 kilómetros de rango
-console.log(citiesInRange);
+  const citiesInRange = getCitiesInRange('Ferrol', 10);
 
 
 
