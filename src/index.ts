@@ -2,10 +2,10 @@ const cities = require("../data/datos_minimized.json");
 import { calculateDistance } from "./geolocalitationUtils";
 import { City } from "./types";
 
-function getCitieByZipCode(zipCode: string): City | undefined {
+function getCityByZipCode(zipCode: string): City | undefined {
   return cities.find((city: City) => city.cityCode === zipCode);
 }
-function getCitiByName(name: string): City | undefined {
+function getCityByName(name: string): City | undefined {
   const filteredCities = cities.filter((item: City) =>
     item.city.includes(name)
   );
@@ -68,9 +68,9 @@ function getCitiesInRange(
 }
 
 export = {
-  getCitiByName,
+  getCityByName,
   getAllCities,
-  getCitieByZipCode,
+  getCityByZipCode,
   getAllCitiesFromCommunity,
   getCitiesInRange,
 };

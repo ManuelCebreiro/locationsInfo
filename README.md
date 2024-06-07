@@ -1,6 +1,18 @@
 # locationsInfo
 
-Este módulo proporciona una lista de ciudades de España y permite varias operaciones.
+Esta librería proporciona una lista de ciudades de España, con varias funciones. 
+
+## Type city
+
+{
+   city: 'Almería',
+   cityCode: '04013',
+   province: 'Almería',
+   community: 'Andalucia',
+   latitude: '36.8381',
+   longitude: '-2.4597',
+   language: [ 'cast' ]
+ },
 
 ## Funcionalidades
 
@@ -11,7 +23,7 @@ Este módulo proporciona una lista de ciudades de España y permite varias opera
 
 ## Instalación
 
-Puedes instalar este módulo utilizando npm:
+Puedes instalar esta librearía utilizando npm:
 
 **npm install locationsInfo**
 
@@ -27,12 +39,71 @@ const allcities = getAllCities();
 
 // Ejemplo de uso para obtener una ciudad por nombre
   const citiesInRange = getCitiesInRange('Ferrol', 10);
-
-
-
-Este README.md proporciona una descripción básica del módulo, cómo instalarlo y cómo usarlo. Puedes personalizarlo según tus necesidades específicas y los detalles de tu módulo.
-
-Espero que esto te ayude a empezar. Si necesitas más ayuda, ¡no dudes en preguntar!
+ [
+  {
+      city: 'Ferrol',
+      cityCode: '15036',
+      province: 'A Coruña',
+      community: 'Galicia',
+      latitude: '43.4832',
+      longitude: '-8.2369',
+      language: [ 'cast', 'ga' ]
+    },
+    {
+      city: 'Fene',
+      cityCode: '15035',
+      province: 'A Coruña',
+      community: 'Galicia',
+      latitude: '43.45',
+      longitude: '-8.15',
+      language: [ 'cast', 'ga' ]
+    },
+    {
+      city: 'Neda',
+      cityCode: '15055',
+      province: 'A Coruña',
+      community: 'Galicia',
+      latitude: '43.4996',
+      longitude: '-8.1594',
+      language: [ 'cast', 'ga' ]
+    },
+    {
+      city: 'Narón',
+      cityCode: '15054',
+      province: 'A Coruña',
+      community: 'Galicia',
+      latitude: '43.5333',
+      longitude: '-8.2167',
+      language: [ 'cast', 'ga' ]
+    },
+    {
+      city: 'Pontedeume',
+      cityCode: '15069',
+      province: 'A Coruña',
+      community: 'Galicia',
+      latitude: '43.4078',
+      longitude: '-8.1721',
+      language: [ 'cast', 'ga' ]
+    },
+    {
+      city: 'Mugardos',
+      cityCode: '15051',
+      province: 'A Coruña',
+      community: 'Galicia',
+      latitude: '43.4604',
+      longitude: '-8.2551',
+      language: [ 'cast', 'ga' ]
+    },
+    {
+      city: 'Ares',
+      cityCode: '15004',
+      province: 'A Coruña',
+      community: 'Galicia',
+      latitude: '43.4244',
+      longitude: '-8.2043',
+      language: [ 'cast', 'ga' ]
+    }
+  ]
 
 ## Contribución
 
