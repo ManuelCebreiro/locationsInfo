@@ -3,7 +3,7 @@
 Esta librería proporciona una lista de ciudades de España, con varias funciones. 
 
 ## Type city
-
+```javascript	
 {
    city: 'Almería',
    cityCode: '04013',
@@ -13,7 +13,7 @@ Esta librería proporciona una lista de ciudades de España, con varias funcione
    longitude: '-2.4597',
    language: [ 'cast' ]
  },
-
+```
 ## Funcionalidades
 
 - **Obtener todas las ciudades de España:** Puedes obtener una lista completa de todas las ciudades disponibles en España.
@@ -32,7 +32,7 @@ Puedes instalar esta librearía utilizando npm:
 
 ```javascript
 // Importar el módulo
-import { getAllCities, getCitiesInRange } from 'locationsinfo';
+import { getAllCities, getCitiesInRange } from 'spanish-cities-info';
 
 // Ejemplo de uso para obtener todas las ciudades
 const allcities = getAllCities();
