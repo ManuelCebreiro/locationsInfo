@@ -107,10 +107,17 @@ const allcities = getAllCities();
 
 ## Contribución
 
-Si encuentras algún error, tienes alguna sugerencia de mejora, o si falta tu ciudad en la lista, ¡me encantaría recibir tu contribución! Puedes [crear un issue](https://github.com/ManuelCebreiro/locationsInfo/issues) para reportar el problema o [enviar un pull request](https://github.com/ManuelCebreiro/locationsInfo/pulls) con tus cambios.
+Si encuentras algún error, tienes alguna sugerencia de mejora, 
+o si falta tu ciudad en la lista, 
+¡me encantaría recibir tu contribución! 
+Puedes [crear un issue](https://github.com/ManuelCebreiro/locationsInfo/issues)
+para reportar el problema o 
+[enviar un pull request](https://github.com/ManuelCebreiro/locationsInfo/pulls) 
+con tus cambios.
 
 Para añadir una nueva ciudad:
-1. Asegúrate de tener el código postal, nombre de la ciudad, provincia, comunidad autónoma y sus códigos correspondientes.
+1. Asegúrate de tener el código postal, nombre de la ciudad, provincia,
+   comunidad autónoma y sus códigos correspondientes.
 2. Edita el archivo JSON de ciudades y agrega la información de la nueva ciudad.
 3. Envia tu pull request con la nueva información y me encargaré de revisarlo.
 

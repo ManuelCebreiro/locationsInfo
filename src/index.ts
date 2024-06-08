@@ -34,7 +34,6 @@ function getAllCitiesFromCommunity(community: string): {
 }
 function getAllCities(): {
   uniqueCities: City[];
-  numberCities: number;
 } {
   const uniqueCityNames = new Set<string>();
   const uniqueCities: City[] = [];
@@ -45,9 +44,8 @@ function getAllCities(): {
       uniqueCities.push(item);
     }
   });
-
-  const numberCities = uniqueCities.length;
-  return { uniqueCities, numberCities };
+  uniqueCities.sort((a: City, b: City) => a.city.localeCompare(b.city));
+  return { uniqueCities };
 }
 
 function getCitiesInRange(
