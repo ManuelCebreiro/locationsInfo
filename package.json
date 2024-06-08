@@ -1,6 +1,6 @@
 {
   "name": "spanish-cities-info",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Information about cities in Spain",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
