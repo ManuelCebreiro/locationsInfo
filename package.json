@@ -1,6 +1,6 @@
 {
   "name": "spanish-cities-info",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Information about cities in Spain",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -13,8 +13,8 @@
     "type": "git",
     "url": "git+https://github.com/ManuelCebreiro/locationsInfo.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["spain","spanish","spanish-cities","spanish-cities-info","cities","provinces","search","range","cities-in-range","España", "ciudades", "informacion","informacion de ciudades de españa","buscar ciudades de españa por rango","buscar ciudades por comunidad"],
+  "author": "Manuel Cebreiro",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ManuelCebreiro/locationsInfo/issues"

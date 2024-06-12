@@ -2,8 +2,8 @@ const cities = require("../data/datos_minimized.json");
 import { calculateDistance } from "./geolocalitationUtils";
 import { City } from "./types";
 
-function getCityByZipCode(zipCode: string): City | undefined {
-  return cities.find((city: City) => city.cityCode === zipCode);
+function getCityByCityCode(cityCode: string): City | undefined {
+  return cities.find((city: City) => city.cityCode === cityCode);
 }
 function getCityByName(name: string): City | undefined {
   const filteredCities = cities.filter((item: City) =>
@@ -15,10 +15,16 @@ function getCityByName(name: string): City | undefined {
 function getAllCitiesFromCommunity(community: string): {
   uniqueCities: City[];
   numberCities: number;
-} {
+} | null {
   const filteredCities = cities.filter((city: City) =>
     city.community.includes(community)
   );
+
+  if (filteredCities.length === 0) {
+    console.warn(`No se encontraron ciudades para la comunidad ${community}`);
+    return null;
+  }
+
   const uniqueCityNames = new Set<string>();
 
   const uniqueCities = filteredCities.filter((item: City) => {
@@ -32,6 +38,7 @@ function getAllCitiesFromCommunity(community: string): {
 
   return { uniqueCities, numberCities };
 }
+
 function getAllCities(): {
   uniqueCities: City[];
 } {
@@ -48,27 +55,33 @@ function getAllCities(): {
   return { uniqueCities };
 }
 
-function getCitiesInRange(
-  referenceCity: string,
-  range: number
-  // allCities: City[]
-): City[] {
+function getCitiesInRange(referenceCity: string, range: number): City[] | null {
   const cityObjectReference = cities.find(
     (item: City) => item.city === referenceCity
   );
   if (!cityObjectReference) {
-    console.error(`La ciudad de referencia ${referenceCity} no se encontró`);
-    return [];
+    console.error(
+      `La ciudad de referencia ${referenceCity}, no se encontró. Asegurate de que el nombre esté bien escrito.`
+    );
+    return null;
   }
-  return cities.filter(
+
+  const citiesInRange = cities.filter(
     (city: City) => calculateDistance(cityObjectReference, city) <= range
   );
+
+  if (citiesInRange.length === 0)
+    console.warn(
+      `No se encuentran ciudades en el rango ${range} km, de ${referenceCity}`
+    );
+
+  return citiesInRange;
 }
 
 export = {
   getCityByName,
   getAllCities,
-  getCityByZipCode,
+  getCityByCityCode,
   getAllCitiesFromCommunity,
   getCitiesInRange,
 };

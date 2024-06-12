@@ -2,7 +2,5 @@ node_modules
 dist
 test.js
 *.log
-*.md
 scripts
-data/cities.json
 .vscode/settings.json

@@ -1,4 +1,4 @@
-# locationsInfo
+# spanish-cities-info
 
 Esta librería proporciona una lista de ciudades de España, con varias funciones. 
 
