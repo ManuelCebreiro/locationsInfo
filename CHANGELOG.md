@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.0.6] - 2024-06-14
+- Fallo en la compilación.
+
 ## [1.0.5] - 2024-06-14
 - Cambiar lo que devuelve `getAllCities`. Para que devuelva un array de ciudades. 
 
