@@ -1,5 +1,8 @@
 # Changelog
 
+## [1.0.5] - 2024-06-14
+- Cambiar lo que devuelve `getAllCities`. Para que devuelva un array de ciudades. 
+
 ## [1.0.4] - 2024-06-12
 - Cambio de nombre en la funcion `getCityByZipCode` por  `getCityByCityCode`, para guardar coherencia entre los nombres. Devolución en caso de errores en la funcion `getAllCitiesFromCommunity` y `getCitiesInRange`. Dejar disponible la data/cities.json en github. Estaba en el gitignore.
 

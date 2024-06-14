@@ -5,7 +5,7 @@ import { City } from "./types";
 function getCityByCityCode(cityCode: string): City | undefined {
   return cities.find((city: City) => city.cityCode === cityCode);
 }
-function getCityByName(name: string): City | undefined {
+function getCityByName(name: string): City[] | undefined {
   const filteredCities = cities.filter((item: City) =>
     item.city.includes(name)
   );
@@ -39,9 +39,7 @@ function getAllCitiesFromCommunity(community: string): {
   return { uniqueCities, numberCities };
 }
 
-function getAllCities(): {
-  uniqueCities: City[];
-} {
+function getAllCities(): City[] {
   const uniqueCityNames = new Set<string>();
   const uniqueCities: City[] = [];
 
@@ -52,7 +50,7 @@ function getAllCities(): {
     }
   });
   uniqueCities.sort((a: City, b: City) => a.city.localeCompare(b.city));
-  return { uniqueCities };
+  return uniqueCities;
 }
 
 function getCitiesInRange(referenceCity: string, range: number): City[] | null {
